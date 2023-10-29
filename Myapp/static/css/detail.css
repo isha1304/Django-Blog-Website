@@ -1,0 +1,43 @@
+ /*
+ h1{
+    font-weight: bold;
+}
+.button1{
+    font-weight: 500;
+    background-color: rgb(63, 2, 58);
+    cursor: pointer;
+    border-radius:4px;
+    font-size: 14px;
+    padding: 4px;
+    text-decoration: none;
+    width:60px;
+    height:30px;
+   text-align: center;
+   box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    
+}
+.button1 a{
+  text-decoration: none;
+  color:white;
+} */
+.button1:hover{
+ 
+  background-color: darkorchid;
+  color:black;
+}
+.button1 a:hover{
+  text-decoration: none;
+}
+/*
+.bt2{
+    cursor: pointer;
+    display: inline;
+}
+.bt2 a{
+  color:rgb(8, 114, 105);
+  font-weight: 800;
+}  */
+.bt2 a:hover{
+  text-decoration: none;
+  color:rgb(180, 9, 9);
+}

@@ -1,0 +1,35 @@
+{% extends 'base2.html' %}
+{% block title %} Blog Posts{% endblock %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<br>
+<br>
+<center>
+<h1>Blog Posts</h1>
+</center>
+<ul>
+{% for post in object_list %}
+    <li class="blogpost"><a href="{% url 'article-detail' post.pk %}" class="Titleblog" style="text-decoration: none;">{{ post.title }}</a> -
+    {{ post.author.first_name }}
+    {{ post.author.last_name }}
+    <!-- {{ post.author.username }}  -->
+    -{{ post.date_posted }} 
+    {% if user.is_authenticated %}
+        {% if user.id == post.author.id %}
+            <small class="ed">
+            <a style="text-decoration: none; color: rgb(5, 80, 20); font-weight: bold; " onMouseOver="this.style.color='orange'"   onMouseOut="this.style.color='rgb(2, 46, 11)'" href="{% url 'update_post' post.pk %}">Edit</a>
+            <a style="text-decoration: none; color: rgb(5, 80,20); font-weight: bold;" onMouseOver="this.style.color='orange'"  onMouseOut="this.style.color='rgb(2, 46, 11)'" href="{% url 'delete_post' post.pk %}">Delete</a>
+            </small>
+        {% endif %}
+    {% endif %}
+    <br>
+    {{ post.snippet }}
+    <!-- <p align="justify">
+    {{ post.content|slice:":300"|safe }}</p> -->
+    </li><br>
+    
+{% endfor %}
+</ul>
+
+{% endblock content %}

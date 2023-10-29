@@ -1,0 +1,18 @@
+{% extends "base2.html" %}
+{% block title %}Login{% endblock %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/login2.css' %}">
+<body style="background-image: url('{% static "images/bcgf2.jpg" %}');"></body>
+<div class="contain"style="background-color: rgb(4,10,92);">
+<div class="log">
+<h1 style="margin-top:3px;">Login Here!</h1>   
+</div>
+<form action="" method="post" id="login">
+    {% csrf_token %}<br>
+    {{ form.as_p }}<br>
+<input type="submit" value="Login" class="btn"><br>
+</form>
+</div>
+{% endblock content %}

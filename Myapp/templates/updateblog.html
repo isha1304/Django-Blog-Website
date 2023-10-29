@@ -1,0 +1,29 @@
+
+{% extends 'base2.html' %}
+{% block title %} Edit Blog Post{% endblock %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/formki.css' %}">
+<br>
+<br>
+{% if user.is_authenticated %}
+    {% if user.id == post.author.id %}
+        
+        <h1>Update Post</h1><br>  
+        <form action="" method="post">
+                {% csrf_token %}
+                {{ form.media }}
+                {{ form.as_p }}<br>
+        <input type="submit" value="Post" class="btn"><br><br><br>
+        </form>
+        
+    {% endif %}
+    
+{% else %}
+ <h2>You are not allowed to edit any post !!!!!</h2>
+ <br><br>
+ <h2>Stay away from it</h2>
+ <br>
+{% endif %}
+
+{% endblock content %}

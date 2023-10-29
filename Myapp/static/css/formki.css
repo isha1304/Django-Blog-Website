@@ -1,0 +1,120 @@
+.form-control{
+    height: fit-content;
+    width: 100%;
+    font-size: 15px;
+    border: 2px solid aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 1px 1px 3px
+    rgba(68, 62, 62, 0.3);
+    color:rgb(27, 121, 121);
+    padding: 8px;
+}
+p{
+    margin-bottom: 20px;
+}
+
+label{
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-family: cursive;
+}
+h1{
+    font-weight: bolder;
+    color:rgb(3, 60, 97);
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.btn{
+   font-size: 14px;
+   padding: 3px;
+   width: 60px;
+   height: 35px;
+   background-color: black;
+   color:antiquewhite;
+   cursor: pointer;
+}
+.btn:hover{
+ color:black;
+ font-weight: 600;
+ background-color: rgb(168, 247, 122);
+ border:2px solid rgb(3, 3, 61);
+}
+strong{
+    font-size: 14px;
+}
+.dark{
+    font-size: 14px;
+    padding:3px;
+    width:100px;
+    height: 35px;
+    border:none;
+    color:antiquewhite;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.dark:hover{
+    color:black;
+    font-weight: 600;
+    background-color: rgb(168, 247, 122);
+    border:2px solid rgb(3, 3, 61);
+   }
+.dark2{
+    font-size: 14px;
+    padding:3px;
+    width:140px;
+    height: 35px;
+    border:none;
+    cursor: pointer;
+    color:antiquewhite;
+    background-color: rgb(31, 1, 1);
+    border-radius: 6px;
+}
+.dark2:hover{
+    background-color: rgb(3, 41, 1);
+    color:rgb(247, 233, 36);
+    font-weight: 600;
+}
+#id_image{
+    font-size: 16px;
+}
+#file-upload-button{
+    margin-right:8px;
+}
+#id_profile_pic{
+    font-size: 16px;
+}
+
+#id_twitter_url ,#id_facebook_url,#id_Instagram_url,#id_linkedin_url{
+    height: fit-content;
+    width: 100%;
+    font-size: 15px;
+    border: 2px solid rgb(0, 46, 46);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 1px 1px 3px
+    rgba(68, 62, 62, 0.3);
+    color:rgb(27, 121, 121);
+    font-weight: 700;
+    padding: 8px;
+    display: block;
+}
+#id_bio{
+    width: 100%;
+    font-size: 15px;
+    border: 2px solid rgb(0, 46, 46);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 1px 1px 3px
+    rgba(68, 62, 62, 0.3);
+    color:rgb(27, 121, 121);
+    font-weight: 700;
+    padding: 8px;
+    display: block;
+    height:150px;
+}
+/* .container{
+    background-color: crimson;
+} */
+
+
+    
